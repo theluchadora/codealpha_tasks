@@ -1,17 +1,17 @@
 # 📱 Social Media App
 
 A full-stack social media application built with **Node.js**, **Express**, **MongoDB**, and **React**.  
-Users can register, login, post images, update their profiles, like posts, and interact with other users(follow and unfollow) all in a clean and modern interface.
+Users can register, login, post images, update their profiles, like posts, and interact with other users (follow and unfollow) all in a clean and modern interface.
 
 ---
 
 ## 📂 Project Structure
 
-
+```
 social-media-app/
 ├── backend/
 │   ├── controllers/
-|   ├── middleWare/
+│   ├── middleWare/
 │   ├── models/
 │   ├── routes/
 │   ├── public/
@@ -19,14 +19,14 @@ social-media-app/
 │   │       ├── theDefaultCover.png
 │   │       ├── theDefaultProfile.png
 │   │       └── (all other images ignored by .gitignore)
-│   ├── .env(add ur own based on the instruction below)
+│   ├── .env (add your own based on the instruction below)
 │   ├── index.js
 │   └── package.json
 ├── frontend/
 │   ├── src/
 │   ├── public/
 │   ├── package.json
-|   ├── env
+│   ├── env
 │   └── ...
 └── README.md
 ```
@@ -48,33 +48,34 @@ social-media-app/
 
 ### 1️⃣ Clone the repository
 
-
+```bash
 git clone https://github.com/theluchadora/social-media-app.git
 cd social-media-app
-
+```
 
 ### 2️⃣ Install dependencies for both backend and frontend
 
-
+```bash
 cd backend
 npm install
 
 cd ../frontend
 npm install
-
+```
 
 ### 3️⃣ Create a `.env` file in the `backend` directory
 
-
+```bash
 touch backend/.env
-
+```
 
 And add your environment variables:
 
+```env
 MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
-
+```
 
 **⚠️ Important:**  
 - Replace `your_mongodb_connection_string` and `your_jwt_secret_key` with your actual values.  
@@ -86,10 +87,10 @@ PORT=5000
 
 ### Run backend
 
-
+```bash
 cd backend
 node index.js
-
+```
 
 The backend runs on: `http://localhost:5000`
 
@@ -97,10 +98,10 @@ The backend runs on: `http://localhost:5000`
 
 ### Run frontend
 
-
+```bash
 cd frontend
 npm start
-
+```
 
 The frontend runs on: `http://localhost:3000`
 
@@ -116,11 +117,10 @@ The frontend runs on: `http://localhost:3000`
 
 ## ✨ Features
 
-- User Registration & Authentication
-- User Profile with image, cover photo, and bio
-- Create, edit, and delete posts with images
-- Like and follow functionality
-- clean UI built with React
+- User Registration & Authentication  
+- User Profile with image, cover photo, and bio  
+- Create, edit, and delete posts with images  
+- Like and follow functionality  
+- Clean UI built with React  
 
 ---
-

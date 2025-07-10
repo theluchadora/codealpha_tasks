@@ -17,7 +17,7 @@ A complete **E-Commerce web application** built with a **React.js frontend**, **
 
 ## 📁 Project Structure
 
-
+```
 E-commerce-store/
 │
 ├── backend/
@@ -40,7 +40,7 @@ E-commerce-store/
 │   └── package.json
 │
 └── README.md
-
+```
 
 ---
 
@@ -48,29 +48,33 @@ E-commerce-store/
 
 ### 📥 1️⃣ Clone the Repository:
 
+```bash
 git clone https://github.com/theluchadora/E-commerce-store.git
 cd E-commerce-store
-
+```
 
 ### 📦 2️⃣ Install Dependencies
 
 #### Backend:
 
+```bash
 cd backend
 npm install
-
+```
 
 #### Frontend:
 
+```bash
 cd ../frontend
 npm install
-
+```
 
 #### Admin Panel:
 
+```bash
 cd ../admin
 npm install
-
+```
 
 ---
 
@@ -79,28 +83,31 @@ npm install
 This project uses **MongoDB Atlas** (or local MongoDB instance if preferred).  
 The database connection string is **hardcoded in**:
 
-
-backend/index.js
+**backend/index.js**
 
 Locate the following line:
-mongoose.connect("mongodb+srv://<yourusername>:<yourpassword>@cluster0.wb5aaly.mongodb.net/e-commerce");
 
+```javascript
+mongoose.connect("mongodb+srv://<yourusername>:<yourpassword>@cluster0.wb5aaly.mongodb.net/e-commerce");
+```
 
 And **replace**:
-- `yourpassword` → your **MongoDB username**
+- `yourusername` → your **MongoDB username**
 - `yourpassword` → your **MongoDB password**
-
 
 ⚠️ **Important:**  
 For production-grade deployment, you should move these credentials to a `.env` file and use `dotenv` to load them securely.
 
+---
 
 ## 🚀 Running the Project
 
 ### 📦 Backend
 
+```bash
 cd backend
 npm start
+```
 
 Runs at: [http://localhost:4000](http://localhost:4000)
 
@@ -108,8 +115,10 @@ Runs at: [http://localhost:4000](http://localhost:4000)
 
 ### 📦 Frontend
 
+```bash
 cd frontend
 npm start
+```
 
 Runs at: [http://localhost:3000](http://localhost:3000)
 
@@ -117,8 +126,10 @@ Runs at: [http://localhost:3000](http://localhost:3000)
 
 ### 📦 Admin Panel
 
+```bash
 cd admin
 npm start
+```
 
 Runs at: [http://localhost:5173](http://localhost:5173)
 
@@ -135,5 +146,3 @@ Runs at: [http://localhost:5173](http://localhost:5173)
 - ✅ Fully integrated backend and frontend
 
 ---
-.
-
