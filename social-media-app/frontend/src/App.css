@@ -1,0 +1,101 @@
+:root {
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --schedule: #E1AE4A;
+}
+
+.App {
+   overflow: hidden; 
+  color: var(--black);
+  background: #f3f3f3;
+  padding: 1rem 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(72px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition:all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mantine-Modal-content {
+  position: fixed !important;
+  top: 5vh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  max-width: 600px !important;
+  width: 90vw !important;
+  background-color: white !important;
+  padding: 2rem !important;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3) !important;
+  border-radius: 12px !important;
+  z-index: 9999 !important;
+  max-height: 80vh !important;  /* Prevent it from growing endlessly */
+  overflow-y: auto !important;  /* Scroll if content exceeds height */
+}
+
+.mantine-Modal-close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  font-size: 1.5rem !important;
+  cursor: pointer !important;
+  z-index: 100000 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Make sure overlay covers entire viewport and blocks pointer events */
+.mantine-Modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; 
+  backdrop-filter: blur(5px) !important; 
+  pointer-events: all !important; 
+  z-index: 9998 !important; 
+}
+
+
+
